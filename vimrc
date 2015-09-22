@@ -8,13 +8,12 @@ call vundle#rc()
 
 Bundle "gmaric/vundle"
 Bundle "tpope/vim-fugitive"
-"Bundle "sontek/minibufexpl.vim"
 Bundle "wincent/Command-T"
 Bundle "sjl/gundo.vim"
 Bundle "vim-scripts/TaskList.vim"
 Bundle "vim-scripts/The-NERD-tree"
 Bundle "Lokaltog/powerline"
-Bundle "vim-scripts/Conque-Shell"
+Bundle "rosenfeld/conque-term"
 Bundle "wesQ3/vim-windowswap"
 Bundle "xolox/vim-session"
 Bundle "xolox/vim-misc"
@@ -35,13 +34,20 @@ map <c-h> <c-w>h
 map <c-l> <c-w>l
 map <c-w>r :vertical resize 80<CR>
 
+map <space> <leader>
+map <leader><space> :nohlsearch<CR>
+nnoremap <leader><return> :wa!<CR>
+
 set list
 set listchars=tab:>.,trail:.
+set colorcolumn=81
+set showbreak=\ #>
+set hlsearch
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set colorcolumn=81
-set showbreak=\ #>
+
+autocmd Filetype html* setlocal expandtab tabstop=2 shiftwidth=2
 
 " disable bells
 set noeb vb t_vb=
