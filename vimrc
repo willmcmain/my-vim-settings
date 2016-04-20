@@ -3,10 +3,10 @@ set nocompatible
 " Bundles
 "===================
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
-Bundle "gmaric/vundle"
+Bundle "VundleVim/Vundle.vim"
 Bundle "tpope/vim-fugitive"
 Bundle "wincent/Command-T"
 Bundle "sjl/gundo.vim"
