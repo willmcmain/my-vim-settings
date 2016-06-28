@@ -17,11 +17,15 @@ Bundle "rosenfeld/conque-term"
 Bundle "wesQ3/vim-windowswap"
 Bundle "xolox/vim-session"
 Bundle "xolox/vim-misc"
-" Python-specific
+" Python
 Bundle "davidhalter/jedi-vim"
 Bundle "vim-scripts/pep8"
 Bundle "fs111/pydoc.vim"
 Bundle "mitechie/pyflakes-pathogen"
+" Jinja2
+Bundle "Glench/Vim-Jinja2-Syntax"
+" Underscore
+Bundle "aaronj1335/underscore-templates.vim"
 
 filetype plugin indent on
 
@@ -48,6 +52,7 @@ set tabstop=4
 set shiftwidth=4
 
 autocmd Filetype html* setlocal expandtab tabstop=2 shiftwidth=2
+au BufRead,BufNewFile *.page set filetype=underscore_template
 
 " disable bells
 set noeb vb t_vb=
@@ -78,7 +83,7 @@ map <leader>l <Plug>TaskList
 
 " PEP 8
 "===================
-"let g:pep8_map='<leader>8'
+let g:pep8_map='<leader>8'
 
 " NERD Tree
 "===================
@@ -95,6 +100,7 @@ endif
 " Jedi-vim
 "===================
 autocmd FileType python setlocal completeopt-=preview
+"let g:jedi#force_py_version=3
 
 " Window swap
 "===================
