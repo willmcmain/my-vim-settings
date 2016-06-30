@@ -58,6 +58,20 @@ au BufRead,BufNewFile *.page set filetype=underscore_template
 set noeb vb t_vb=
 au GUIEnter * set vb t_vb=
 
+" move by displayed lines
+nnoremap <silent> <Up> gk
+nnoremap <silent> <Down> gj
+nnoremap <silent> <Home> g<Home>
+nnoremap <silent> <End> g<End>
+nnoremap <silent> k gk
+nnoremap <silent> j gj
+nnoremap <silent> 0 g0
+nnoremap <silent> $ g$
+inoremap <silent> <Up> <C-o>gk
+inoremap <silent> <Down> <C-o>gj
+inoremap <silent> <Home> <C-o>g<Home>
+inoremap <silent> <End> <C-o>g<End>
+
 " Basic GUI options
 "===================
 if has("gui_running")
