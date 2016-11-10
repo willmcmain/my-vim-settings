@@ -27,12 +27,12 @@ let colors_name = "willslate"
 :hi Visual gui=none guifg=khaki guibg=olivedrab cterm=reverse
 :hi WarningMsg guifg=salmon ctermfg=1
 :hi String guifg=SkyBlue ctermfg=darkcyan
-:hi Comment term=bold ctermfg=11 guifg=grey40
+:hi Comment term=bold ctermfg=11 guifg=aquamarine
 :hi Constant guifg=#ffa0a0 ctermfg=brown
 :hi Special guifg=darkkhaki ctermfg=brown
 :hi Identifier guifg=salmon ctermfg=red
 :hi Include guifg=red ctermfg=red
-:hi PreProc gui=bold guifg=purple cterm=bold ctermfg=red
+:hi PreProc gui=bold guifg=salmon cterm=bold ctermfg=red
 :hi Operator guifg=Red ctermfg=Red
 :hi Define guifg=gold gui=bold ctermfg=yellow
 :hi Type guifg=CornflowerBlue ctermfg=2

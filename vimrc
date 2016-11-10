@@ -75,7 +75,7 @@ inoremap <silent> <End> <C-o>g<End>
 " Basic GUI options
 "===================
 if has("gui_running")
-    colorscheme slate
+    colorscheme will
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
     set lines=999 columns=999
 endif
