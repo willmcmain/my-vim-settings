@@ -17,11 +17,13 @@ Bundle "rosenfeld/conque-term"
 Bundle "wesQ3/vim-windowswap"
 Bundle "xolox/vim-session"
 Bundle "xolox/vim-misc"
+Bundle "vim-syntastic/syntastic"
 " Python
 Bundle "davidhalter/jedi-vim"
-Bundle "vim-scripts/pep8"
+" Bundle "vim-scripts/pep8"
 Bundle "fs111/pydoc.vim"
 Bundle "mitechie/pyflakes-pathogen"
+"Bundle "nvie/vim-flake8"
 " Jinja2
 Bundle "Glench/Vim-Jinja2-Syntax"
 " Underscore
