@@ -30,6 +30,7 @@ Bundle "Glench/Vim-Jinja2-Syntax"
 Bundle "aaronj1335/underscore-templates.vim"
 
 filetype plugin indent on
+syntax on
 
 " General Options
 "===================
