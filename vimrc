@@ -107,7 +107,7 @@ let g:pep8_map='<leader>8'
 if has("gui_running")
     autocmd VimEnter * NERDTree
 endif
-let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '^__pycache__$']
 
 " Powerline
 "===================
