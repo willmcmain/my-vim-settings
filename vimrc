@@ -54,9 +54,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-autocmd Filetype html* setlocal expandtab tabstop=2 shiftwidth=2
-au BufRead,BufNewFile *.page set filetype=underscore_template
-
 " disable bells
 set noeb vb t_vb=
 au GUIEnter * set vb t_vb=
@@ -74,6 +71,16 @@ inoremap <silent> <Up> <C-o>gk
 inoremap <silent> <Down> <C-o>gj
 inoremap <silent> <Home> <C-o>g<Home>
 inoremap <silent> <End> <C-o>g<End>
+
+" save swapfiles in .vim directory instead of leaving them lying around
+set directory=~/.vim/swap//
+set backupdir=~/.vim/swap/backup//
+set undodir=~/.vim/swap/undo//
+
+" filetype options
+autocmd Filetype html* setlocal expandtab tabstop=2 shiftwidth=2
+au BufRead,BufNewFile *.page set filetype=underscore_template
+
 
 " Basic GUI options
 "===================

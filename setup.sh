@@ -22,3 +22,5 @@ if [ ! -d $VIM_DIR/fonts ]; then
 fi
 
 $VIM_DIR/fonts/install.sh
+
+mkdir -p $VIM_DIR/swap/backup $VIM_DIR/swap/undo
