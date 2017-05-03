@@ -28,6 +28,8 @@ Bundle "mitechie/pyflakes-pathogen"
 Bundle "Glench/Vim-Jinja2-Syntax"
 " Underscore
 Bundle "aaronj1335/underscore-templates.vim"
+" Mako
+Bundle "sophacles/vim-bundle-mako"
 
 filetype plugin indent on
 syntax on
@@ -82,6 +84,7 @@ set undodir=~/.vim/swap/undo//
 " filetype options
 autocmd Filetype html* setlocal expandtab tabstop=2 shiftwidth=2
 au BufRead,BufNewFile *.page set filetype=underscore_template
+au BufRead,BufNewFile *.html.template set filetype=mako
 
 
 " Basic GUI options
