@@ -53,6 +53,8 @@ set hlsearch
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set number
+set ruler
 
 " disable bells
 set noeb vb t_vb=
@@ -86,7 +88,7 @@ au BufRead,BufNewFile *.page set filetype=underscore_template
 "===================
 if has("gui_running")
     colorscheme will
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 12
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13
     set lines=999 columns=999
 endif
 
